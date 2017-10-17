@@ -1,16 +1,23 @@
 
 
 
-##if you want to enable rewrite on apache
+## prepare, git clone
 ```shell
-#base image
-FROM php:7.1.6-apache
+$ git clone https://github.com/ajeet476/nginx-1.12.1-purge-module.git docker
+$ cd docker
+$ git clone https://github.com/ajeet476/utility.git src
+```
 
-#redis and other
-#RUN pecl install redis-3.1.0 \
-#    && pecl install xdebug-2.5.0 \
-#    && docker-php-ext-enable redis xdebug
 
-#enable rewrite module
-RUN a2enmod rewrite
-``
+## running container and purge test
+```shell
+# now run container
+$ docker-compose up -d
+
+
+# check for cache
+$ curl localhost
+$ curl localhost/purge/
+
+```
+
