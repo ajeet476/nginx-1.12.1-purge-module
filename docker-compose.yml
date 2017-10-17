@@ -13,9 +13,13 @@ services:
       - "80:80"
 
   backend:
-    image: php:7.1.6-apache
+    build:
+      context: ./backend
+    image: backend
     networks:
       - test
+    volumes:
+      - ./src:/var/www/html
     ports:
       - "8080:80"
 
