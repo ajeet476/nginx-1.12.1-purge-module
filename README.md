@@ -1,5 +1,5 @@
 
-## Dockerfile used Testing
+## Dockerfile used in testing
 #### Nginx with Purge module
 Nginx is installed in /etc/nginx <br>
 Note: nginx.service is not registered <br>
