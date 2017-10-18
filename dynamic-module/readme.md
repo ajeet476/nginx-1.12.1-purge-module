@@ -8,17 +8,18 @@ wget http://labs.frickle.com/files/ngx_cache_purge-2.3.tar.gz
 tar -xzvf ngx_cache_purge-2.3.tar.gz
 ```
 
-# edit config file
-
+# edit config file ( for ngx_cache_purge)
+ 
  [Reference](./config)
 
 
 
 ##  download nginx source
+```shell
 wget http://nginx.org/download/nginx-1.12.1.tar.gz
 tar -xzvf nginx-1.12.1.tar.gz
 cd /tmp/nginx-1.12.1
-
+```
 
 
 ### command to make dynamic module
